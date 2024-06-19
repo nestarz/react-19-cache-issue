@@ -6,7 +6,7 @@ const { cache, createElement } = require("react");
 const getId = cache(() => ({ id: Math.random() }));
 
 const A = async () => {
-    await new Promise((res) => setTimeout(res, 10));
+    await new Promise((res) => setImmediate(res));
     const id = getId();
     console.log(id);
     return null;
