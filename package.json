@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^19.0.0-rc.0",
-    "react-server-dom-webpack": "^19.0.0-rc.0"
+    "react": "^19.0.0-rc-e684ca66ab-20240619",
+    "react-server-dom-webpack": "^19.0.0-rc-e684ca66ab-20240619"
   }
 }
