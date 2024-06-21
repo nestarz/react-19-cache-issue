@@ -1,7 +1,5 @@
-const {
-  renderToReadableStream,
-} = require("react-server-dom-webpack/server.edge");
-const { cache, createElement } = require("react");
+import { renderToPipeableStream } from "@bureaudouble/rsc-engine/react-server-dom-esm/server.node";
+import { cache, createElement } from "@bureaudouble/rsc-engine/react.forker";
 
 const getId = cache(() => ({ id: Math.random() }));
 
@@ -18,4 +16,4 @@ const B = async () => {
   return createElement(A, {}, null);
 };
 
-renderToReadableStream(createElement(B, {}, null), null);
+renderToPipeableStream(createElement(B, {}, null), null);
